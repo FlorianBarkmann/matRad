@@ -85,10 +85,11 @@ subplot(2,2,4);plot(usedOpt.timeIter,usedOpt.allConstraintViolations,'x'); xlabe
 %% Super AMS_sim
 pln.propOpt.optimizer = "Superization";
 pln.propOpt.feasibility_seeker = "AMS_sequential";
-pln.propOpt.max_iter = 750;
+pln.propOpt.max_iter = 200;
 pln.propOpt.max_time = 3600;
 pln.propOpt.lambda = 1;
 pln.propOpt.weighted = true;
+pln.propOpt.control_sequence = "sequential"
 
 
 
